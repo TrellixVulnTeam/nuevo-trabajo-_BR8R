@@ -1,0 +1,274 @@
+@import 'imports/variables' , 'imports/mixins' ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    // margen *****************************
+    // mobile first *************************
+
+@media screen and (max-width:480px){
+      
+
+
+    //   header********************************
+      .headerIndex{
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url(https://images.unsplash.com/photo-1606954901803-c7c2432fc64e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 800px;
+      }
+
+      
+      
+      .menu{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        height: 290px;
+        .logo img{
+            display: flex;
+            align-items: center;
+            margin-left: 130px;
+
+             }
+        .logo p{
+          text-align: center;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 1.3rem;
+           }
+           ul{
+                    
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            padding: 11px 20px;
+            list-style: none;
+            text-decoration: none;
+            
+            
+          
+            
+        }
+        li a{
+            
+            padding: 11px 20px;
+            list-style: none;
+            text-decoration: none;
+            font-size: 1rem;
+            color: white
+            
+            
+            
+            
+            
+           
+
+            }
+        a:hover{
+            background-color: rgb(223, 26, 26);
+            border: 1px solid white;
+            padding: 10px 19px;
+            color: white;
+            text-decoration: none;
+           
+        }
+      }
+    //   *********************** 
+    
+    // tituloMalala
+
+   .tituloMalala{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+
+    h1{
+        font-size: 2.5rem;
+        
+        font-family: 'Bebas Neue', cursive;
+        
+    }
+    p{
+        font-size: 1.5rem;
+        margin: 15px 20px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    a{
+          font-size: 1.3rem;
+          display: inline-block;
+          padding: 15px 20px;
+          background-color: rgb(255, 0, 0);
+          color: white;
+          text-decoration: none;
+          font-family: 'Bebas Neue', cursive;
+          
+          
+    }
+    a:hover{
+        background-color: rgb(226, 71, 71);
+        border: 2px white solid;
+        padding: 13px 18px;
+        color: white;
+        list-style: none;
+
+    }
+   }
+//    **************************
+//  galeria *****************
+
+.galeria{
+    font-family: 'open sans';
+    h1{
+        text-align: center;
+        margin: 20px 0 15px 0;
+        font-weight: 300;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+    }
+    .linea{
+        border-top: 5px solid rgb(255, 0, 0);
+        margin-bottom: 40px;
+    }
+    .contenedor-imagenes{
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 3px;
+      .imagen{
+          width: 62%;
+          
+          position: relative;
+          height: 300px;
+          margin-bottom: 5px;
+          box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);
+          img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            
+          }
+         
+      }
+      .overlay{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: rgba(231, 58, 58, 0.87);
+          width: 100%;
+          height: 0;
+          transition: .5s ease;
+          overflow: hidden;
+
+          h2{
+              color: white;
+              font-size: 30px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              text-align: center;
+              transform: translate(-50%, -50%);
+              font-family: 'Bebas Neue', cursive;
+
+          }
+          
+      }
+      
+    }
+    .imagen:hover .overlay{
+        height: 100%;
+        cursor: pointer;
+    }
+}
+// ***************************
+
+// seccion ayuda 
+
+.seccionAyuda{
+    
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+    
+    align-items: center;
+    justify-content:space-evenly;
+    color:rgb(223, 26, 26)
+   
+
+
+
+  
+
+}
+
+// ***************************************************************
+
+// ****************************************************
+// footer
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    padding-left: 40px;
+    .grupo1{
+        width: 100%;
+       
+        padding: 45px 0px;
+        .box figure{
+            width: 100%;
+            height: 100%;
+            
+            img{
+                width: 250px;
+                
+            }
+          
+        }
+       .box h2{
+           color: white;
+           margin-bottom: 25px;
+           font-size: 20px;
+       }
+       .box p{
+           color: white;
+           margin-bottom: 10px;
+       }
+       .redes a{
+               display: inline-block;
+               text-decoration: none;
+               width: 55px;
+               height: 55px;
+               line-height: 45px;
+               color: white;
+               margin-right: 10px;
+               
+               text-align: center;
+               transition: all 300ms ease;
+               .redes a:hover{
+                   color: red;
+                   background-color: red;
+               }
+       }
+    }
+
+    .grupo2{
+        
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+        small{
+            font-size: 15px;
+        }
+    }
+}
+
+}
