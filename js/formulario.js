@@ -74,25 +74,33 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-	// agregando los valores 
-	var valorNombre = document.getElementById('DatoNombre').value;
-	var valorApellido = document.getElementById('DatoApellido').value;
-	var valorDesde = document.getElementById('DatoDesde').value;
-	var valorHasta = document.getElementById('DatoHasta').value;
-	var valorCorreo = document.getElementById('DatoCorreo').value;
-	var valorTelefono = document.getElementById('DatoTelefono').value;
 	
+   
 
-	// agregando al localstorage
+    
+        
+    var data={
+       nombre:document.getElementById('DatoNombre').value,
+       apellido:document.getElementById('DatoApellido').value,
+       desde:document.getElementById('DatoDesde').value,
+       hasta:document.getElementById('DatoHasta').value,
+       correo :document.getElementById('DatoCorreo').value,
+       telefono :document.getElementById('DatoTelefono').value
+    
+    };
+         emailjs.send('service_idzjve9', 'template_nzq24pr', data)
+         .then(function(res){
+             console.log('success', res.status);
 
-	localStorage.setItem('nombre', valorNombre);
-	localStorage.setItem('apellido', valorApellido);
-	localStorage.setItem('desde', valorDesde);
-	localStorage.setItem('hasta', valorHasta);
-	localStorage.setItem('correo', valorCorreo);
-	localStorage.setItem('telefono', valorTelefono);
+         })
+    
 
-	console.log(localStorage);
+
+
+   
+
+        
+	
 
 
 	// agregando toastify 
@@ -105,8 +113,20 @@ formulario.addEventListener('submit', (e) => {
 		}
 	}).showToast();
 
+    // agregando fetch
     
-	if(campos.nombre && campos.apellido  && campos.correo && campos.telefono  ){
+    var valorNombre = document.getElementById('DatoNombre').value;
+	var valorApellido = document.getElementById('DatoApellido').value;
+	var valorDesde = document.getElementById('DatoDesde').value;
+	var valorHasta = document.getElementById('DatoHasta').value;
+	var valorCorreo = document.getElementById('DatoCorreo').value;
+	var valorTelefono = document.getElementById('DatoTelefono').value;
+	 
+
+  
+    
+    
+    if(campos.nombre && campos.apellido  && campos.correo && campos.telefono  ){
 		formulario.reset();
          
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
@@ -121,11 +141,3 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
-
-
-
-
-
-
-
-
