@@ -32,21 +32,24 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 800px; }
+    height: 1200px; }
   .menu {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    height: 290px; }
+    height: 590px; }
     .menu .logo img {
-      display: flex;
-      align-items: center;
-      margin-left: 120px; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 100px; }
     .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; }
+      font-size: 2.3rem; }
     .menu ul {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
       margin-left: auto;
       padding: 11px 20px;
       list-style: none;
@@ -56,7 +59,8 @@
       list-style: none;
       text-decoration: none;
       font-size: 1rem;
-      color: white; }
+      color: white;
+      text-align: center; }
     .menu a:hover {
       background-color: #df1a1a;
       border: 1px solid white;
@@ -70,7 +74,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 300px; }
     .tituloMalala h1 {
       font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive; }
@@ -93,6 +97,7 @@
       color: white;
       list-style: none; }
   .galeria {
+    margin-top: 200px;
     font-family: 'open sans'; }
     .galeria h1 {
       text-align: center;
@@ -188,16 +193,18 @@
       .pie-pagina .grupo2 small {
         font-size: 15px; }
   .headerGaleria .menu {
-    background-color: black;
-    height: 290px; }
+    background: black;
+    height: 590px; }
     .headerGaleria .menu .logo img {
-      display: flex;
-      align-items: center;
-      margin-left: 130px; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 100px; }
     .headerGaleria .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; }
+      font-size: 2.3rem; }
     .headerGaleria .menu ul {
       display: flex;
       justify-content: space-between;
@@ -226,9 +233,10 @@
     margin-top: 30px;
     font-size: 3rem; }
   .ul {
-    width: 100%;
+    width: 90%;
     background: lightgrey;
     padding: 1em;
+    margin-left: 20px;
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -300,16 +308,18 @@
     background-color: var(--blanco);
     box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; }
   .headerInfo .menu {
-    background-color: black;
-    height: 290px; }
+    background: black;
+    height: 690px; }
     .headerInfo .menu .logo img {
-      display: flex;
-      align-items: center;
-      margin-left: 130px; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 100px; }
     .headerInfo .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; }
+      font-size: 2.3rem; }
     .headerInfo .menu ul {
       display: flex;
       justify-content: space-between;
@@ -336,7 +346,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 700px; }
     .titulo1 h1 {
       font-size: 3.5rem;
       font-family: 'Bebas Neue', cursive; }
@@ -378,7 +388,10 @@
       text-align: center; }
   .testimonios {
     width: 100%;
-    margin-top: 170px; }
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .testimonios h3 {
       text-align: center;
       font-size: 3rem;
@@ -387,17 +400,24 @@
       border-top: 5px solid red;
       margin-bottom: 40px; }
     .testimonios .captura img {
-      width: 400px;
-      height: 700px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 600px; }
     .testimonios a {
       font-size: 1.3rem;
-      display: inline-block;
       padding: 15px 20px;
       background-color: red;
       color: white;
       text-decoration: none;
-      margin-left: 200px;
-      font-family: 'Bebas Neue', cursive; }
+      font-family: 'Bebas Neue', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
     .testimonios a:hover {
       background-color: #e24747;
       border: 2px white solid;
@@ -417,14 +437,14 @@
       margin-left: 3px; }
     .direccion a {
       font-size: 1.3rem;
-      display: inline-block;
       padding: 15px 20px;
       background-color: red;
       color: white;
       text-decoration: none;
-      margin-left: 200px;
-      margin-top: 30px;
-      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       font-family: 'Bebas Neue', cursive; }
     .direccion a:hover {
       background-color: #e24747;
@@ -443,11 +463,13 @@
     height: 800px; }
   .menu {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    height: 290px; }
+    height: 390px; }
     .menu .logo img {
-      display: flex;
-      align-items: center;
-      margin-left: 260px; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 80px; }
     .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
@@ -478,7 +500,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 200px; }
     .tituloMalala h1 {
       font-size: 2.5rem;
       font-family: 'Bebas Neue', cursive; }
@@ -558,16 +580,18 @@
     justify-content: space-evenly;
     color: #df1a1a; }
   .headerGaleria .menu {
-    background-color: black;
-    height: 290px; }
+    background: black;
+    height: 590px; }
     .headerGaleria .menu .logo img {
-      display: flex;
-      align-content: center;
-      align-items: center; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 100px; }
     .headerGaleria .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; }
+      font-size: 2.3rem; }
     .headerGaleria .menu ul {
       display: flex;
       justify-content: space-between;
@@ -670,16 +694,19 @@
     background-color: var(--blanco);
     box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; }
   .headerInfo .menu {
-    background-color: black;
-    height: 290px; }
+    background: black;
+    height: 490px; }
     .headerInfo .menu .logo img {
-      display: flex;
-      align-items: center;
-      margin-left: 130px; }
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 100px; }
     .headerInfo .menu .logo p {
       text-align: center;
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.3rem; }
+      font-size: 2.3rem;
+      margin-bottom: 20px; }
     .headerInfo .menu ul {
       display: flex;
       justify-content: space-between;
@@ -706,7 +733,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 300px; }
     .titulo1 h1 {
       font-size: 3.5rem;
       font-family: 'Bebas Neue', cursive; }
@@ -748,7 +775,10 @@
       text-align: center; }
   .testimonios {
     width: 100%;
-    margin-top: 170px; }
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .testimonios h3 {
       text-align: center;
       font-size: 3rem;
@@ -757,18 +787,19 @@
       border-top: 5px solid red;
       margin-bottom: 40px; }
     .testimonios .captura img {
-      margin-left: 200px;
-      width: 400px;
-      height: 700px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 500px; }
     .testimonios a {
       font-size: 1.3rem;
-      display: inline-block;
       padding: 15px 20px;
       background-color: red;
       color: white;
       text-decoration: none;
-      font-family: 'Bebas Neue', cursive;
-      margin-left: 360px; }
+      font-family: 'Bebas Neue', cursive; }
     .testimonios a:hover {
       background-color: #e24747;
       border: 2px white solid;
@@ -776,6 +807,9 @@
       color: white;
       list-style: none; }
   .direccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 170px; }
     .direccion h3 {
       text-align: center;
@@ -785,7 +819,12 @@
       border-top: 5px solid red;
       margin-bottom: 40px; }
     .direccion .capturaMaps img {
-      margin-left: 200px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 500px; }
     .direccion a {
       font-size: 1.3rem;
       display: inline-block;
@@ -793,10 +832,13 @@
       background-color: red;
       color: white;
       text-decoration: none;
-      margin-left: 360px;
       margin-top: 30px;
       margin-bottom: 40px;
-      font-family: 'Bebas Neue', cursive; }
+      font-family: 'Bebas Neue', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
     .direccion a:hover {
       background-color: #e24747;
       border: 2px white solid;
@@ -1149,25 +1191,42 @@
       text-align: center; }
   .testimonios {
     width: 100%;
-    margin-top: 170px; }
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-align: center; }
     .testimonios h3 {
       text-align: center;
       font-size: 3rem;
-      font-family: 'Bebas Neue', cursive; }
+      font-family: 'Bebas Neue', cursive;
+      color: black; }
     .testimonios .linea {
       border-top: 5px solid red;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      margin-top: 30px; }
     .testimonios .captura img {
-      margin-left: 500px; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
     .testimonios a {
       font-size: 1.3rem;
-      display: inline-block;
       padding: 15px 20px;
       background-color: red;
       color: white;
       text-decoration: none;
-      margin-left: 900px;
-      font-family: 'Bebas Neue', cursive; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      width: 30%;
+      position: relative; }
     .testimonios a:hover {
       background-color: #e24747;
       border: 2px white solid;
@@ -1177,7 +1236,13 @@
   .direccion {
     width: 100%;
     margin-top: 170px;
-    align-items: center; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-align: center; }
     .direccion h3 {
       text-align: center;
       font-size: 3rem;
@@ -1186,20 +1251,22 @@
       border-top: 5px solid red;
       margin-bottom: 40px; }
     .direccion .capturaMaps img {
-      margin-left: 400px;
       width: 1000px;
       height: 800px; }
     .direccion a {
       font-size: 1.3rem;
-      display: inline-block;
       padding: 15px 20px;
       background-color: red;
       color: white;
       text-decoration: none;
-      margin-left: 900px;
-      margin-top: 30px;
-      margin-bottom: 40px;
-      font-family: 'Bebas Neue', cursive; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      width: 30%;
+      position: relative; }
     .direccion a:hover {
       background-color: #e24747;
       border: 2px white solid;
