@@ -79,7 +79,7 @@ formulario.addEventListener('submit', (e) => {
 
     
         
-    var data={
+    let data={
        nombre:document.getElementById('DatoNombre').value,
        apellido:document.getElementById('DatoApellido').value,
        desde:document.getElementById('DatoDesde').value,
@@ -113,14 +113,7 @@ formulario.addEventListener('submit', (e) => {
 		}
 	}).showToast();
 
-    // agregando fetch
-    
-    var valorNombre = document.getElementById('DatoNombre').value;
-	var valorApellido = document.getElementById('DatoApellido').value;
-	var valorDesde = document.getElementById('DatoDesde').value;
-	var valorHasta = document.getElementById('DatoHasta').value;
-	var valorCorreo = document.getElementById('DatoCorreo').value;
-	var valorTelefono = document.getElementById('DatoTelefono').value;
+  
 	 
 
   
