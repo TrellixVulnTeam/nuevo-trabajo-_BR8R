@@ -451,7 +451,20 @@
       border: 2px white solid;
       padding: 13px 18px;
       color: white;
-      list-style: none; } }
+      list-style: none; }
+  .contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedor img {
+      width: 600px;
+      height: 300px;
+      box-shadow: 25px 25px 8px #444;
+      margin-top: 30px;
+      object-fit: cover;
+      margin-bottom: 30px;
+      padding: 5px 10px 0 10px; } }
 
 @media screen and (min-width: 551px) and (max-width: 1020px) {
   .headerIndex {
@@ -845,6 +858,17 @@
       padding: 13px 18px;
       color: white;
       list-style: none; }
+    .direccion .contenedor {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .direccion .contenedor img {
+        width: 700px;
+        height: 400px;
+        box-shadow: 25px 25px 8px #444;
+        margin-top: 30px;
+        object-fit: cover; }
   .pie-pagina {
     width: 100%;
     background-color: black;
@@ -882,7 +906,19 @@
       text-align: center;
       color: white; }
       .pie-pagina .grupo2 small {
-        font-size: 15px; } }
+        font-size: 15px; }
+  .contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedor img {
+      width: 700px;
+      height: 400px;
+      box-shadow: 25px 25px 8px #444;
+      margin-top: 30px;
+      object-fit: cover;
+      margin-bottom: 30px; } }
 
 @media screen and (min-width: 1021px) and (max-width: 2400px) {
   .headerIndex {
@@ -1270,9 +1306,21 @@
       padding: 13px 18px;
       color: white;
       list-style: none; }
+  .contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .contenedor img {
+      width: 700px;
+      height: 400px;
+      box-shadow: 25px 25px 8px #444;
+      margin-top: 30px;
+      object-fit: cover; }
   .pie-pagina {
     width: 100%;
-    background-color: black; }
+    background-color: black;
+    margin-top: 60px; }
     .pie-pagina .grupo1 {
       width: 100%;
       max-width: 1600px;

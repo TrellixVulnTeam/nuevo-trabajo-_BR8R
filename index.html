@@ -3,6 +3,7 @@
 
 <head>
   <title>Inicio| Malala Jujuy Hostel</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,9 +43,9 @@
       </ul>
     </nav>
     <div  class="tituloMalala">
-      <h1 class="animate__animated animate__backInDown">MALALA JUJUY HOSTEL </h1>
-      <P class="animate__animated animate__backInDown">Bed & Breakfast San Salvador de Jujuy-Abierto 24h</P>
-      <a  class="animate__animated animate__backInDown" href="reservar.html">Reservar Ahora</a>
+      <h1 class="animate__animated animate__backInDown" >MALALA JUJUY HOSTEL </h1>
+      <P class="animate__animated animate__backInDown" >Bed & Breakfast San Salvador de Jujuy-Abierto 24h</P>
+      <a class="animate__animated animate__backInDown"  href="reservar.html">Reservar Ahora</a>
 
 
     </div>
@@ -52,7 +53,7 @@
   </header>
   <!-- galeria  -->
 
-  <div class="galeria">
+  <div  data-aos="fade-right" class="galeria">
     <h1>Galeria</h1>
     <div class="linea"></div>
     <div class="contenedor-imagenes">
@@ -138,7 +139,7 @@
   </div>
   <!-- seccion ayuda  -->
 
-  <section class="seccionAyuda">
+  <section  data-aos="fade-right" class="seccionAyuda">
     <figure class="text-center">
       <blockquote class="blockquote">
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -203,7 +204,7 @@ Argentina
       <div class="box">
         <figure>
           <a href="#">
-             <img class="animate__animated animate__backInLeft " src="imagenes/logo.png" alt="">
+             <img data-aos="fade-up-right" src="imagenes/logo.png" alt="">
           </a>
         </figure>
       </div>
@@ -217,7 +218,7 @@ Argentina
         Para mas informacion toque <a href="informacion.html">aqui.</a>
         </p>
       </div>
-      <div class="box">
+      <div data-aos="fade-up-left"  class="box">
         <h2>SIGUENOS</h2>
         <div class="redes">
           <a class="animate__animated animate__backInRight " href="https://www.booking.com/hotel/ar/malala-jujuy-hostel.es-ar.html?aid=318615;label=Spanish_Argentina_ES_AR_20153587225-6h15TH8LvM25bNckrW9zZwS107692793425%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-162435869305%3Alp9041031%3Ali%3Adec%3Adm;sid=dc4abcda1e515b5c8eb243166fb2d499;dest_id=-1014053;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1647261638;srpvid=b924592210bc0128;type=total;ucfs=1&#hotelTmpl"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
@@ -242,6 +243,13 @@ Argentina
 
 
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
